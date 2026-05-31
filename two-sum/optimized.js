@@ -16,8 +16,8 @@ function twoSum(nums, target){
 function main (){
     const nums = [1, 4, 7, 9, 11];
     const target = 12;
-    console.log(twoSum(nums, target));
     
+    console.log(twoSum(nums, target));   
 }
 
 main();
