@@ -1,4 +1,5 @@
 function twoSum(nums, target){
+    // Use a hash map
     const seen = new Map();
 
     for (let i = 0; i < nums.length; i++){

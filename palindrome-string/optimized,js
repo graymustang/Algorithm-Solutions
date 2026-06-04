@@ -1,4 +1,5 @@
 function isPalindrome (string){
+    // Two pointer method
     let left = 0, right = string.length - 1
 
     while (left < right){

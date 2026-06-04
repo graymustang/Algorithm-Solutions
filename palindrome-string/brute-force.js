@@ -1,4 +1,5 @@
 function isPalindrome (string){
+    // Push the characters onto a stack, and then pop
     const stack = []
 
     for (const char of string) {
