@@ -1,11 +1,20 @@
 function reverseString(string){
-    let left = 0, right = string.length
+    // Strings are immutable in JS, so convert string to array of characters first
+    let chars = string.split("")
+
+    let left = 0, right = chars.length - 1
 
     while (left < right){
-        let temp = 'A'
+        let temp = chars[left]
+
+        // [chars[left], chars[right]] = [chars[right], chars[left]]
+        chars[left] = chars[right]
+        chars[right] = temp
+        left++
+        right--
     }
 
-    return string
+    return chars.join("")
 }
 
 function main (){
