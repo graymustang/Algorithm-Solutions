@@ -10,9 +10,11 @@ function hasValidParentheses(string){
     const last = seen[seen.length - 1]
 
     for (const char of string){
-        if () //opening brace, push
+        if (seen(char)){
+            
+        } //opening brace, push
 
-        if () //get top of stackj, 
+        if () //get top of stack, 
     }
 
     if (seen.length === 0){
