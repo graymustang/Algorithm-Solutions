@@ -10,24 +10,22 @@ function hasValidParentheses(string){
     const last = seen[seen.length - 1]
 
     for (const char of string){
-        if (seen(char)){
-            
-        } //opening brace, push
+        if (parentheses.has(char)){
+            const last = seen.pop()
 
-        if () //get top of stack, 
+            if (last != parentheses.get(char)){
+                return false
+            }
+        } else {
+            seen.push(char)
+        }
     }
-
-    if (seen.length === 0){
-        return true
-    } else {
-        return false
-    }
+    return seen.length === 0
 }
 
 function main () {
-    let string = "()"
+    let string = "[]{}()"
     console.log(hasValidParentheses(string))
-
 }
 
 main()
