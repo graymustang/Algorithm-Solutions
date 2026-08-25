@@ -1,9 +1,11 @@
 function missingMultiple(nums, k) {
 
     let multiple = k
+
     while (nums.includes(multiple)){
         multiple += k
     }
+    
     return multiple
 }
 

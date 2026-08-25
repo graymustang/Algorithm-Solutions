@@ -6,6 +6,7 @@ function missingMultiple(nums, k) {
     while (hashSet.has(multiple)){
         multiple += k
     }
+    
     return multiple
 }
 
