@@ -4,10 +4,10 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Run Current JavaScript File",
+      "name": "Run JavaScript",
       "program": "${file}",
-      "cwd": "${workspaceFolder}",
-      "console": "integratedTerminal",
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
       "skipFiles": ["<node_internals>/**"]
     }
   ]
