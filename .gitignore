@@ -1,2 +1,24 @@
-# Playground test
+# Playground and testing files
 test.js
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# VS Code local settings
+.vscode/
+
+# Build and coverage files
+dist/
+coverage/
