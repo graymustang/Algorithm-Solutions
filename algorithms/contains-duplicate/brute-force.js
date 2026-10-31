@@ -1,12 +1,12 @@
 function hasDuplicate(nums) {
     const stack = []
 
-    for (const int of nums) {
+    for (const num of nums) {
 
-        if (stack.includes(int)) {
+        if (stack.includes(num)) {
             return true
         } else {
-            stack.push(int)
+            stack.push(num)
         }
     }
 
@@ -14,7 +14,7 @@ function hasDuplicate(nums) {
 }
 
 function main() {
-    let nums = [1, 2, 3, 5, 6, 7, 8, 9]
+    let nums = [1, 2, 3, 1]
     console.log(hasDuplicate(nums))
 }
 
