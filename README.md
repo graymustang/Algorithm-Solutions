@@ -6,9 +6,12 @@ JavaScript solutions for common algorithm practice problems. The repo is organiz
 
 ```text
 algorithms/
+  conatins-duplicate/
+    brute-force.js
+    optimized.js
   palindrome-string/
     brute-force.js
-    optimized,js
+    optimized.js
   reverse-string/
     optimized.js
   two-sum/
